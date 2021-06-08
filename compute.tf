@@ -29,7 +29,7 @@ resource "oci_core_instance" "web-01" {
  resource "oci_core_instance" "web-02" {
    availability_domain = data.oci_identity_availability_domains.ADs.availability_domains[var.AD -1]["name"]
    compartment_id      = var.compartment_ocid
-   display_name        = "Web-Server-02"
+   display_name        = "Web-Server-03"
    shape               = var.instance_shape
  
    create_vnic_details {
